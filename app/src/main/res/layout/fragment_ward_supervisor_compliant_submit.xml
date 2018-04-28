@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="#987654"
+            android:textColor="@color/fontColor2"
+            android:textSize="@dimen/font_extra_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/grey_border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add_note"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/etWardSuperCompSubmitFrgAddNote"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:inputType="textMultiLine"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add_images"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal" />
+
+
+                <TextView
+                    android:id="@+id/tvWardSuperCompSubmitFrgAddImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_grey"
+                    android:text="Browse..."
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnWardSuperCompSubmitFrgClose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/close"
+            android:textColor="#af9d67" />
+    </LinearLayout>
+</RelativeLayout>

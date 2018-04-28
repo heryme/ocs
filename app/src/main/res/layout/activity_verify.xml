@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background"
+    tools:context="com.om.swachatha.corporation.activity.SignInActivity">
+
+    <LinearLayout
+        android:id="@+id/llVerifyActMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_back_arrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:src="@drawable/ic_app_logo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="@string/verify_mobile_number"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_extra_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llVerifyActMain"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_marginRight="@dimen/_70sdp"
+            android:gravity="center"
+            android:text="@string/verify_opt_sent"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_otp"
+            android:textSize="@dimen/font_normal"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="@string/verify_enter_otp"/>
+
+        <EditText
+            android:id="@+id/etActVerifyOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="#000000"
+            android:text="@string/verify_dont_received_otp"/>
+
+        <Button
+            android:id="@+id/btnActVerifyResend"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_green_border"
+            android:textColor="@color/greenBorderColor"
+            android:text="@string/verify_resend"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btnActVerifyNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/sign_in_next"
+            android:textColor="#af9d67" />
+
+    </LinearLayout>
+
+</RelativeLayout>

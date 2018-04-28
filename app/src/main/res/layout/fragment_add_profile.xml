@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:src="@drawable/ic_app_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/my_profile"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_extra_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <EditText
+                android:id="@+id/etAddProfileFrgName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:drawableLeft="@mipmap/ic_person"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/name"
+                android:padding="@dimen/_5sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@color/grey">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_ward"/>
+                    <Spinner
+                        android:id="@+id/spnAddProfileFrgWard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/groupByArray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/grey"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/_5sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/ic_society"/>
+                    <Spinner
+                        android:id="@+id/spnAddProfileFrgSociety"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/groupByArray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etAddProfileFrgFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:background="@color/grey"
+                android:drawableLeft="@mipmap/ic_flat"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:hint="@string/flat"
+                android:padding="@dimen/_5sdp" />
+
+            <EditText
+                android:id="@+id/etAddProfileFrgEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:drawableLeft="@mipmap/ic_email"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:hint="@string/email"
+                android:padding="@dimen/_5sdp" />
+
+            <Button
+                android:id="@+id/btnAddProfileFrgNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/sign_in_next"
+                android:textColor="#af9d67" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

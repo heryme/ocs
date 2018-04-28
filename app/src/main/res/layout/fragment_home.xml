@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:src="@drawable/ic_app_logo" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnFrgHomeRegisterYourComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:paddingLeft="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:background="@drawable/rounded_button_orange"
+            android:gravity="left|center"
+            android:text="@string/register_your_complaint"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/ic_noti"
+            android:layout_marginRight="@dimen/_30sdp"/>
+        <Button
+            android:id="@+id/btnFrgHomeTrackYourComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_30sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_normal"
+            android:text="@string/track_your_co_complaint"
+            android:background="@drawable/rounded_button_green"
+            android:gravity="left|center"
+            android:drawableLeft="@mipmap/ic_trake"
+            android:layout_marginRight="@dimen/_30sdp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnFrgHomeNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:visibility="gone"
+        android:text="@string/sign_in_next"
+        android:textColor="#af9d67" />
+</RelativeLayout>

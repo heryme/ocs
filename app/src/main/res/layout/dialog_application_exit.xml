@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="@dimen/_10sdp">
+    <TextView
+        android:id="@+id/tv_dialog_app_exit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_title"
+        android:text="Are you sure want to exit"/>
+    <Button
+        android:id="@+id/btn_dialog_app_no"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_dialog_app_exit_title"
+        android:background="@null"
+        android:layout_toLeftOf="@+id/btn_dialog_app_yes"
+        android:layout_height="wrap_content"
+        android:text="No"/>
+    <Button
+        android:id="@+id/btn_dialog_app_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="YES"
+        android:layout_below="@+id/tv_dialog_app_exit_title"/>
+
+</RelativeLayout>

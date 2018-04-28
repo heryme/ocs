@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_app_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="@string/current_complaints"
+            android:textColor="@color/fontColor"
+            android:textSize="@dimen/font_extra_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:text="#00564"
+                android:textSize="@dimen/font_normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:text="Complaint Heading"
+                android:textSize="@dimen/font_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/black"
+                    android:text="Date :"/>
+                <TextView
+                    android:id="@+id/tvCurrentCompFrgDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/black"
+                    android:text="19/12/2017"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCurrentCompFrgCloseComp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/rounded_button_orange"
+                android:gravity="left|center"
+                android:text="@string/close_the_compliant"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                android:textAllCaps="false"
+                android:drawableLeft="@mipmap/ic_close_complaints1"
+                android:layout_marginRight="@dimen/_30sdp"/>
+            <Button
+                android:id="@+id/btnCurrentCompFrgReopnenComp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/font_normal"
+                android:text="@string/re_open_the_complaint"
+                android:background="@drawable/rounded_button_green"
+                android:gravity="left|center"
+                android:drawableLeft="@mipmap/ic_open_complaints1"
+                android:layout_marginRight="@dimen/_30sdp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Om Swachatha Corporation</string>
+
+    <!-- Sign In Activity -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_phone_number">Phone Number</string>
+    <string name="sign_in_phone_password">Password</string>
+    <string name="sign_in_next">Next</string>
+    <string name="sign_in_forgot_pass">Forgot Password ?</string>
+    <string name="sign_in_new_here">New Here? Sign Up</string>
+
+    <!-- Sign up Activity -->
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_enter_city">Enter City</string>
+    <string name="sign_up_confirm_password">Confirm Password</string>
+    <string name="sign_up_already_account">Already have an account?</string>
+
+
+    <!-- Verify Activity-->
+    <string name="verify_mobile_number">Verify Mobile Number</string>
+    <string name="verify_opt_sent">OTP Has been sent to you on your Mobile Number.</string>
+    <string name="verify_enter_otp">Enter OTP</string>
+    <string name="verify_dont_received_otp">Dont Received Otp ?</string>
+    <string name="verify_resend">Resend</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Home Fragment -->
+    <string name="register_your_complaint">Register Your Complaint</string>
+    <string name="track_your_co_complaint">Track Your Complaint</string>
+
+    <!-- Profile Fragment -->
+    <string name="my_profile">My Profile</string>
+    <string name="name">Name :</string>
+    <string name="ward">Ward :</string>
+    <string name="society">Society :</string>
+    <string name="flat">Flat/House No :</string>
+    <string name="email">Email</string>
+
+    <!-- Add Profile Fragment-->
+    <string-array name="groupByArray">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Track Complaint Fragment -->
+    <string name="track_your_complaint">Track Your Complaint</string>
+    <string name="current_complaint">Current Complaint</string>
+    <string name="pass_complaint">Past Complaint</string>
+
+    <!-- Current Complaint Fragment -->
+    <string name="current_complaints">Current Complaints</string>
+    <string name="close_the_compliant">Close The Complaint</string>
+    <string name="re_open_the_complaint">Re-Open The Complaint</string>
+
+    <!-- Past Compliant Fragment -->
+    <string name="past_complaint">Past Complaint</string>
+
+    <!-- Ward Supervisor Complain Detail  Fragment-->
+    <string name="complaint_number">Complaint Number :</string>
+    <string name="complaint_title">Complaint Title :</string>
+    <string name="date">Date :</string>
+    <string name="mobile_no">Mobile Number</string>
+
+    <!-- Ward Supervisor Complain Submit  Fragment-->
+    <string name="add_note">Add Note :</string>
+    <string name="add_images">Add Images :</string>
+    <string name="close">Close</string>
+    <string name="add_image">Add Image :</string>
+
+    <!-- Feedack Fragment-->
+    <string name="request_id">Request Id:</string>
+    <string name="based">Based on your experience on the service request,please rate us your experience.</string>
+    <string name="btn_submit">Submit</string>
+
+    <!-- Validtion -->
+    <string name="hint_enter_valid_email">Enter Valid Email</string>
+    <string name="err_msg_re_enter_password_dosnt_match">Password doesn\'t match</string>
+
+</resources>

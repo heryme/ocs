@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/one">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="Home" />
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/two">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@mipmap/ic_notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_about"
+            android:title="About" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/three">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/ic_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@mipmap/ic_rate_us"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/ic_setting"
+            android:title="Setting" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/five">
+        <item
+            android:id="@+id/nav_open_comp"
+            android:icon="@mipmap/ic_open_complaints"
+            android:title="Open Complaints" />
+        <item
+            android:id="@+id/nav_close_comp"
+            android:icon="@mipmap/ic_close_complaints"
+            android:title="Close Complaints" />
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single" android:id="@+id/four">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>
